@@ -81,7 +81,7 @@ let mine = async function (userName, password, autoValid=false) {
 		return submitMe();
 	}, [password]);
 
-	await page.waitForSelector('#myTargetElement');
+	await page.waitForSelector('#totalAssets');
 	await page.goto(waUrl);
 
 	await page.waitForFunction(function (){
